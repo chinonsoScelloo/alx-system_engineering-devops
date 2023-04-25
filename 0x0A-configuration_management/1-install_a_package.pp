@@ -1,4 +1,5 @@
-exec { 'install_flask':
-  command => '/usr/bin/pip3 install Flask==2.1.0',
-  require => Package['python3-pip'],
+# install puppet-lint -v 2.5.0
+
+exec { 'puppet-lint':
+  command => '/usr/bin/apt-get -y install flask -v 2.1.0',
 }
